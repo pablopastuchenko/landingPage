@@ -1,5 +1,9 @@
-import Button from "../button"
-import Styles from "../welcome/welcome.module.scss"
+import Image from "next/image";
+import Button from "../button";
+import Styles from "../welcome/welcome.module.scss";
+import bannerWelcome from "../../public/images/BannerWelcome.svg"
+
+
 
 const Welcome = () => {
     return <div className={Styles.container}>
@@ -8,7 +12,9 @@ const Welcome = () => {
             <p>Somos uma agência de performance digital, aceleramos vendas e aquisição de leads para grandes marcas.</p>
             <Button title="Aumentar vendas" kind="secundary"/>
         </div>
-        <div className={Styles.image}></div>
+        <div className={Styles.image}>
+            <Image src={bannerWelcome} alt="Banner Welcome" />
+        </div>
     </div>
 }
 
