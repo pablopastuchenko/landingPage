@@ -10,6 +10,9 @@ const Button = ({title, kind}) => {
         if(kind === "secundary") {
             return Styles.secundary
         }
+        if(kind === "full") {
+            return Styles.full
+        }
 
         return Styles.primary
     }
