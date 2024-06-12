@@ -7,7 +7,11 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
     justify-content: space-between;
-    gap: 150px;
+    gap: 0px 10rem;
+    background-image: url("/images/fundoWelcome.svg");
+    background-repeat: no-repeat;
+    background-size: cover; //por enquanto
+    padding-bottom: 10rem;
 }
 
 .texts {
@@ -46,6 +50,21 @@
         display: flex;
         flex-flow: column;
         gap: 23px;
+    }
+}
+
+.footer {
+    display: grid;
+    grid-column-start: 2;
+    text-align: center;
+    font-size: 20px;
+    padding: 0 6rem;
+    line-height: 2rem;
+    color: $gray-color;
+
+    span {
+        color: $white-color;
+        cursor: pointer;
     }
 }
 
